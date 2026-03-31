@@ -1,0 +1,120 @@
+/* src/styles/MinistryDetail.css */
+.ministry-detail-page {
+  overflow-x: hidden;
+  padding-top: 80px;
+}
+
+/* --- HERO --- */
+.md-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background: var(--navy-blue);
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  overflow: hidden;
+}
+.md-hero-overlay {
+  position: absolute; top:0; left:0; width:100%; height:100%;
+  background: rgba(6, 18, 41, 0.6); z-index: 1;
+}
+.md-hero-content { position: relative; z-index: 2; text-align: center; }
+.md-category-badge {
+  background: var(--gold); color: var(--navy-blue); padding: 5px 15px;
+  font-weight: 700; font-size: 0.8rem; border-radius: 20px; margin-bottom: 20px; display: inline-block;
+}
+.md-hero h1 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+.md-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto; }
+
+/* --- MISSION --- */
+.md-mission { padding: 80px 0; }
+.md-mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.md-mission-text h2 { font-family: var(--font-heading); color: var(--navy-blue); margin-bottom: 20px; }
+.md-mission-text p { color: var(--text-gray); line-height: 1.8; margin-bottom: 30px; }
+.md-stat-box {
+  background: var(--navy-blue); color: var(--white); padding: 20px 30px; border-radius: 8px;
+  display: inline-block; border-left: 5px solid var(--gold);
+}
+.md-stat-box h3 { font-size: 2rem; color: var(--gold); }
+.md-stat-box p { font-size: 0.9rem; color: rgba(255,255,255,0.8); margin: 0; }
+
+/* --- HOD --- */
+.md-hod { background: #f8f9fa; padding: 80px 0; }
+.md-hod-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: center; }
+.md-hod-quote { font-family: var(--font-heading); font-style: italic; font-size: 1.2rem; color: var(--navy-blue); margin: 20px 0; border-left: 3px solid var(--gold); padding-left: 20px; }
+.md-hod-content h3 { font-size: 1.5rem; color: var(--navy-blue); }
+.md-hod-title { color: var(--gold); font-weight: 600; margin-bottom: 15px; }
+.md-hod-bio { color: var(--text-gray); line-height: 1.8; }
+
+/* --- TIMES --- */
+.md-times { padding: 80px 0; text-align: center; }
+.md-times h2 { font-family: var(--font-heading); color: var(--navy-blue); margin-bottom: 40px; }
+.md-times-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left; }
+.md-time-card { display: flex; gap: 15px; padding: 20px; border: 1px solid #eee; border-radius: 8px; }
+.md-time-icon { flex-shrink: 0; }
+.md-time-card h4 { color: var(--navy-blue); margin-bottom: 5px; }
+.md-time-schedule { font-weight: 600; color: var(--text-dark); font-size: 0.9rem; }
+.md-time-venue { color: var(--text-gray); font-size: 0.85rem; margin-top: 5px; }
+
+/* --- GALLERY --- */
+.md-gallery { padding: 80px 0; background: var(--navy-blue); color: var(--white); }
+.md-gallery h2 { font-family: var(--font-heading); }
+.md-gallery-sub { color: rgba(255,255,255,0.7); margin-bottom: 30px; }
+.md-gallery-filters { display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap; }
+.md-gallery-filters .filter-btn { border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.7); }
+.md-gallery-filters .filter-btn.active, .md-gallery-filters .filter-btn:hover { background: var(--white); color: var(--navy-blue); border-color: var(--white); }
+.md-gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.md-gallery-item { position: relative; height: 250px; border-radius: 8px; overflow: hidden; }
+.md-gallery-tag { position: absolute; bottom: 15px; left: 15px; background: var(--gold); color: var(--navy-blue); padding: 4px 10px; font-size: 0.7rem; font-weight: 700; border-radius: 4px; }
+
+/* --- JOIN FORM --- */
+.md-join { padding: 80px 0; text-align: center; }
+.md-join h2 { font-family: var(--font-heading); color: var(--navy-blue); margin-bottom: 10px; }
+.md-join > p { color: var(--text-gray); margin-bottom: 40px; max-width: 500px; margin-left: auto; margin-right: auto; }
+.md-form { max-width: 700px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; }
+.md-form-group { display: flex; flex-direction: column; }
+.md-form-group.full-width { grid-column: 1 / -1; }
+.md-form-group label { font-size: 0.9rem; font-weight: 600; color: var(--text-dark); margin-bottom: 8px; }
+.md-form-group input, .md-form-group select, .md-form-group textarea {
+  padding: 12px 15px; border: 1px solid #ccc; border-radius: 6px; font-size: 0.95rem;
+  font-family: var(--font-body); transition: border 0.3s; width: 100%;
+}
+.md-form-group input:focus, .md-form-group select:focus, .md-form-group textarea:focus {
+  outline: none; border-color: var(--navy-blue); box-shadow: 0 0 0 3px rgba(10,31,68,0.1);
+}
+.btn-submit-red { background: var(--join-red); color: var(--white); justify-self: center; margin-top: 20px; padding: 15px 40px; }
+.btn-submit-red:hover { background: #a93226; }
+
+/* DUMMY IMAGE PLACEHOLDERS */
+.dummy-img-placeholder {
+  width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+  color: #888; font-size: 1.2rem; font-weight: 600; border-radius: 8px; border: 2px dashed #ccc;
+}
+.dummy-img-placeholder.tall { min-height: 400px; }
+.dummy-img-placeholder.portrait { min-height: 500px; max-width: 300px; margin: 0 auto; }
+
+
+/* ========================================== */
+/* --- STRICT MOBILE MEDIA QUERIES --- */
+/* ========================================== */
+@media (max-width: 768px) {
+  .md-hero { height: 50vh; min-height: 350px; padding: 0 20px; }
+  .md-hero h1 { font-size: 2rem; }
+  .md-hero p { font-size: 1rem; }
+  
+  .md-mission-grid, .md-hod-grid { grid-template-columns: 1fr; gap: 40px; }
+  .md-mission { padding: 60px 20px; }
+  .md-hod { padding: 60px 20px; }
+  
+  .md-times { padding: 60px 20px; }
+  .md-times-grid { grid-template-columns: 1fr; }
+  
+  .md-gallery { padding: 60px 20px; }
+  .md-gallery-grid { grid-template-columns: 1fr 1fr; }
+  .md-gallery-item { height: 180px; }
+  
+  .md-join { padding: 60px 20px; }
+  .md-form { grid-template-columns: 1fr; }
+  .btn-submit-red { width: 100%; text-align: center; }
+}

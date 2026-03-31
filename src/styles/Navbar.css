@@ -1,0 +1,107 @@
+/* src/styles/Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Updated to flex for Logo + Text side by side */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--navy-blue);
+  white-space: nowrap; /* Prevents text from breaking awkwardly */
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-menu a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--navy-blue);
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  color: var(--gold);
+}
+
+.btn-join {
+  background-color: var(--join-red);
+  color: var(--white) !important;
+}
+
+.btn-join:hover {
+  background-color: #a93226;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* Hide logo text on mobile to prevent nav spilling */
+  .logo-text {
+    display: none;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    background: var(--white);
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    transform: translateY(-150%);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-menu.active {
+    transform: translateY(0);
+  }
+
+  .nav-join-btn {
+    margin-top: 10px;
+  }
+}

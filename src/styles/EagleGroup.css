@@ -1,0 +1,134 @@
+/* src/styles/EagleGroup.css */
+.eagle-group-page {
+  overflow-x: hidden;
+  padding-top: 80px;
+  background: #f8f9fa;
+}
+
+.eg-hero {
+  background: var(--navy-blue);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.eg-badge {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.eg-hero h1 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.eg-hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.8;
+}
+
+.eg-grid-container {
+  padding: 80px 20px;
+  display: grid;
+  /* Auto-fit prevents spilling: 2 columns on desktop, 1 on mobile */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.eg-card {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 25px;
+  transition: transform 0.3s;
+  border-bottom: 4px solid transparent;
+}
+
+.eg-card:hover {
+  transform: translateY(-5px);
+  border-bottom-color: var(--gold);
+}
+
+.eg-icon-box {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  background: rgba(10, 31, 68, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eg-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--navy-blue);
+  margin-bottom: 5px;
+}
+
+.eg-tagline {
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.eg-desc {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.eg-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--navy-blue);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: gap 0.3s, color 0.3s;
+}
+
+.eg-link:hover {
+  gap: 10px;
+  color: var(--gold);
+}
+
+.eg-link.external {
+  color: var(--join-red);
+}
+
+@media (max-width: 768px) {
+  .eg-hero h1 { font-size: 2.5rem; }
+  
+  /* Forces strictly 1 column on mobile so text doesn't squish */
+  .eg-grid-container { 
+    grid-template-columns: 1fr; 
+  }
+  
+  .eg-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+  
+  .eg-icon-box {
+    width: 100%;
+    height: 60px;
+  }
+}
