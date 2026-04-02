@@ -6,35 +6,35 @@ import '../styles/Ministries.css';
 
 const ministriesList = [
   {
-    name: "Men Alive Ministries",
+    name: "Men Alive Fellowship",
     category: "Adults",
     desc: "Building men of integrity and spiritual authority.",
     slug: "men-alive",
     svg: <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy-blue)" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
   },
   {
-    name: "Daughters of Sarah",
+    name: "Daughters of Sarah Fellowship",
     category: "Adults",
     desc: "Raising women of grace, prayer, and profound impact.",
     slug: "daughters-of-sarah",
     svg: <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy-blue)" strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
   },
   {
-    name: "Action Youth For Christ",
+    name: "Action Youth For Christ Fellowship",
     category: "Youth",
     desc: "Empowering the next generation with Holy Ghost fire.",
     slug: "action-youth",
     svg: <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy-blue)" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
   },
   {
-    name: "Action Teens For Christ",
+    name: "Action Teens For Christ Fellowship",
     category: "Youth",
     desc: "Grounding teenagers in the Word and navigating by grace.",
     slug: "action-teens",
     svg: <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy-blue)" strokeWidth="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
   },
   {
-    name: "Children Evangelical",
+    name: "Children Evangelical Ministry",
     category: "Children",
     desc: "Laying a solid biblical foundation for the little ones.",
     slug: "children-evangelical",
@@ -57,8 +57,8 @@ const Ministries = () => {
       {/* --- HERO SESSION --- */}
       <section className="ministries-hero">
         <div className="container">
-          <h1>Our Ministries</h1>
-          <p className="scripture">"Go ye into all the world, and preach the gospel to every creature."</p>
+          <h1>Welcome to Our Fellowships</h1>
+          <p className="scripture">"Building and Equipping the People that builds a Nation."</p>
           <span className="scripture-ref">— Mark 16:15</span>
         </div>
       </section>
@@ -88,7 +88,7 @@ const Ministries = () => {
             className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}
             onClick={() => setActiveFilter(filter)}
           >
-            {filter === "All" ? "All Ministries" : filter}
+            {filter === "All" ? "All Fellowships" : filter}
           </button>
         ))}
       </div>

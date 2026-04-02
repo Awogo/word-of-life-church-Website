@@ -38,10 +38,11 @@ const Home = () => {
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
             </div>
-            <h3>Sunday Services</h3>
+            <h3>Our Services</h3>
             <div className="time-block">
-              <p><strong>First Service:</strong> 7:00 AM</p>
-              <p><strong>Main Service:</strong> 10:00 AM</p>
+              <p><strong>Sunday Celebration Service:</strong> 7:30 AM</p>
+              <p><strong>Wednesday Bible-Study:</strong> 04:30 PM</p>
+                  <p><strong>Friday Revival Service:</strong> 04:30 PM</p>
             </div>
           </div>
           
@@ -54,7 +55,7 @@ const Home = () => {
             </div>
             <h3>Our Location</h3>
             <div className="time-block">
-              <p>Ajamimogha Road,</p>
+              <p>118-120 Ajamimogha Road,</p>
               <p>Warri, Delta State, Nigeria</p>
             </div>
           </div>
@@ -64,7 +65,7 @@ const Home = () => {
       <section className="ministries-section">
         <div className="container">
           <div className="section-header">
-            <h2>Our Ministries</h2>
+            <h2>Our Fellowships</h2>
             <p>Discover a community tailored for your spiritual growth and stage of life.</p>
           </div>
           <div className="ministries-grid">
@@ -72,41 +73,41 @@ const Home = () => {
             {/* 1. Action Youth */}
             <div className="ministry-card">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy-blue)" strokeWidth="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-              <h3>Action Youth For Christ</h3>
+              <h3>Action Youth For Christ Fellowship</h3>
               <p>Empowering the next generation with the fire of the Holy Ghost and biblical truth.</p>
             </div>
 
             {/* 2. Action Teens */}
             <div className="ministry-card">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy-blue)" strokeWidth="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-              <h3>Action Teens For Christ</h3>
+              <h3>Action Teens For Christ Fellowship</h3>
               <p>Raising focused teenagers grounded in the Word and navigating life by God's grace.</p>
             </div>
 
             {/* 3. Children Evangelical */}
             <div className="ministry-card">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy-blue)" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-              <h3>Children Evangelical</h3>
+              <h3>Children Evangelical Ministry</h3>
               <p>Laying a solid biblical foundation for our little ones in a fun, engaging environment.</p>
             </div>
 
             {/* 4. Men Alive */}
             <div className="ministry-card">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy-blue)" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-              <h3>Men Alive Ministries</h3>
+              <h3>Men Alive <br></br> Fellowship</h3>
               <p>Building men of integrity, responsibility, and spiritual authority in the home and society.</p>
             </div>
 
             {/* 5. Daughters of Sarah */}
             <div className="ministry-card">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--navy-blue)" strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-              <h3>Daughters of Sarah</h3>
+              <h3>Daughters of Sarah Fellowship</h3>
               <p>Raising women of grace, prayer, and profound impact in their homes and the church.</p>
             </div>
 
           </div>
           <div className="section-cta">
-            <a href="/ministries" className="btn btn-secondary">View All Ministries</a>
+            <a href="/ministries" className="btn btn-secondary">View All Fellowship</a>
           </div>
         </div>
       </section>
