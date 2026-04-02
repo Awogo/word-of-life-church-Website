@@ -20,6 +20,7 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 import EagleNest from './pages/EagleNest';
 import EagleHealth from './pages/EagleHealth';
+import EagleBooks from './pages/EagleBooks';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
               
               {/* Eagle Strength Routes */}
               <Route path="/eagle-strength" element={<EagleStrength />} />
+              <Route path="/eagle-strength/books" element={<EagleBooks />} /> {/* NEW BOOKS ROUTE */}
               <Route path="/eagle-strength/cart" element={<Cart />} /> {/* NEW CART ROUTE */}
               <Route path="/eagle-group" element={<EagleGroup />} />
               <Route path="/isom" element={<NotFound />} />
